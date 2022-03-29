@@ -1,0 +1,117 @@
+.blogtitle {
+    height: 45px;
+    width: $site-width;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    p {
+        font-family: ProximaNovaThin;
+        font-size: 30px;
+    }
+
+    hr {
+        width: 106px;
+        height: 2px;
+        border-width: 0;
+        background-color:black;
+        margin-top: -15px;
+    }
+}
+
+
+.blogpost-container {
+    height: 376px;
+    width: $site-width;
+    margin: 0 auto;
+    margin-top: 36px;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 100px;
+
+    .blog-date {
+        width: 60px;
+        height: 60px;
+        background-color: $site-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .date-day {
+            color: $site-white;
+            font-family: gillsans;
+            font-size: 22px;
+            margin: 0 auto;
+        }
+
+        .date-month {
+            color: $site-white;
+            font-family: gillsans;
+            font-size: 12px;
+            margin: 0 auto;
+        }
+    }
+
+    .blog-image {
+        width: 900px;
+        background-image: url(../images/blog.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 259px;
+    }
+
+    .blog-title {
+        font-family: gillsans;
+        font-size: 15px;
+        color: $site-black;
+        margin-top: 20px;
+    }
+
+    .blog-text {
+        font-family: gillsans;
+        font-size: 13px;
+        color: $site-blue;
+        margin-top: 20px;
+        width: 380px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .blogtitle {
+        height: 45px;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .blogpost-container {
+        height: 376px;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 36px;
+        margin-bottom: 100px;
+        justify-content: center;
+
+        .blog-content {
+            margin-left: 30px;
+        }
+
+        .blog-image {
+            width: 100%;
+            background-image: url(../images/blog.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 150%;
+            height: 259px;
+        }
+    }
+}
